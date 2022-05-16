@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER--------------------------------- */
+
+header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+.navbar {
+  background-color: whitesmoke;
+  min-height: 60px;
+}
+.img-background {
+  min-height: 370px;
+  border-radius: 15px;
+  background-image: url(https://bipbap.ru/wp-content/uploads/2018/03/01-700x1050-640x960.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 15px;
+}
+.logo_svg:hover {
+  cursor: pointer;
+}
+.logo_svg:hover .logo_path {
+  fill: rgb(41, 177, 80);
+  transition: 0.5s ease;
+}
+.header_logo-block {
+  flex: 1;
+}
+.header_input-block {
+  flex: 3;
+}
+
+.header_input-block > input {
+  border-radius: 20px;
+}
+.header_button-block {
+  flex: 1;
+}
+
+.header_button-block {
+  display: flex;
+  justify-content: end;
+}
+
+/* MAIN----------------------------------------- */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 80px;
+  min-height: 1000px;
+}
+#cardBlock {
+  height: 100%;
+}
+
+.row {
+  background-color: white;
+  height: 60px;
+  opacity: 0.9;
+  vertical-align: bottom;
+  width: 100%;
+  justify-content: center;
+}
+
+.img-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.card {
+  border: none;
+}
+
+.name {
+  text-align: center;
+}
+.checker {
+  width: 25px;
+  height: 25px;
+  border-radius: 1.25em;
+  opacity: 0.8;
+}
+
+/* MODAL BOOTSTRAP-----------------------------------------*/
+/* .modal-dialog {
+  width: 300px;
+}
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+}
+.btn-modal {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: rgb(228, 223, 215);
+}
+.btn-modal:hover {
+  background-color: slateblue;
+  color: aliceblue;
+  transition: 0.3s ease;
+} */
+
+/* MY MODAL -----------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /*Hidden by default*/
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal_2 {
+  display: none; /*Hidden by default*/
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-modal {
+  align-self: center;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: rgb(228, 223, 215);
+  margin: 5px;
+}
+.btn-modal:hover {
+  background-color: slateblue;
+  color: aliceblue;
+  transition: 0.3s ease;
+}
+
+/* FOOTER -----------------------------------------------*/
+footer {
+  background-color: brown;
+  min-height: 40px;
+  color: aliceblue;
+}
+.footer_block {
+  display: flex;
+  border-top: 1px solid grey;
+  justify-content: center;
+  align-items: center;
+}
